@@ -1,3 +1,14 @@
+This is a note taking android app. Users can add a note and long press a existig note to delete it.
+
+<br>
+<b>This app uses</b>
+<br>
+1. Android ListView.
+<br>
+2. SQLite in Android
+<br><br>
+
+
 <b>Screenshots</b>
 
 1. <br>

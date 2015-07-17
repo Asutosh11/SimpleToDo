@@ -1,4 +1,4 @@
-This is a note taking android app. Users can add a note and long press a existig note to delete it.
+This is a note taking android app. Users can add a note and long press an existing note to delete it.
 
 <br>
 <b>This app uses</b>

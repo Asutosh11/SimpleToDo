@@ -16,13 +16,15 @@ import java.util.Calendar;
 
 public class AddToDo extends Activity {
 
-    Button button;
-    Button button2;
-    EditText edtxt;
-    DatabaseHandler db;
-    Calendar c;
-    SimpleDateFormat sdf;
-    String strDate;
+    private Button button;
+    private Button button2;
+    private EditText edtxt;
+    private DatabaseHandler db;
+    private Calendar c;
+    private SimpleDateFormat sdf;
+    private String strDate;
+    private String theText;
+    private Intent i, k;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -50,11 +52,10 @@ public class AddToDo extends Activity {
             @Override
             public void onClick(View v) {
 
-                String theText = edtxt.getText().toString();
-
+                theText = edtxt.getText().toString();
                 db.addContact(new Note(theText, strDate));
 
-                Intent i = new Intent(getApplicationContext(),MainActivity.class);
+                i = new Intent(getApplicationContext(),MainActivity.class);
                 startActivity(i);
             }
         });
@@ -65,8 +66,8 @@ public class AddToDo extends Activity {
         button2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                // TODO Auto-generated method stub
-                Intent k = new Intent(getApplicationContext(),MainActivity.class);
+
+                k = new Intent(getApplicationContext(),MainActivity.class);
                 startActivity(k);
             }
         });

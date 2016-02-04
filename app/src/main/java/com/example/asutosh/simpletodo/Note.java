@@ -16,14 +16,12 @@ public class Note {
         this._id = id;
         this._message = message;
         this._date = date;
-        //setter
     }
 
     // constructor
     public Note(String message, String date){
         this._message = message;
         this._date = date;
-        //getter
     }
     // getting ID
     public int getID(){

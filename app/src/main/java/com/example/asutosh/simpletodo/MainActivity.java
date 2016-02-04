@@ -10,22 +10,32 @@ import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.ListView;
+import android.widget.SimpleAdapter;
 import android.widget.Toast;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
 
 
 public class MainActivity extends Activity {
 
-    Button button5;
-    DatabaseHandler db2;
-    ArrayAdapter<String> adapter;
-    int iid;
-    List<Note> note;
-    ArrayList<String> MY_LIST;
-    String content;
-    int no_of_db_rows; // used to count number of rows in database
+
+
+    private HashMap<String, String> hm;
+    private List<HashMap<String, String>> aList;
+    private Button button5;
+    private DatabaseHandler db2;
+    private SimpleAdapter adapter;
+    private List<Note> note;
+    private ArrayList<String> MY_LIST;
+    private String content;
+    private int no_of_db_rows;
+    private String[] from;
+    private int[] to;
+    private ListView listView;
+    private String PREFS_NAME;
+    private SharedPreferences settings;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -40,35 +50,28 @@ public class MainActivity extends Activity {
         db2 = new DatabaseHandler(this);
 
         // Reading all contacts
-
-       note = db2.getAllNotes();
+        note = db2.getAllNotes();
         MY_LIST = new ArrayList<>();
-
         no_of_db_rows = 0;
 
+        aList = new ArrayList<HashMap<String, String>>();
         for (Note n : note) {
 
             content = n.getMessage() ;
+            hm = new HashMap<String, String>();
+            hm.put("notesView", "" + content);
+            aList.add(hm);
             MY_LIST.add(content);
-
             no_of_db_rows++;
         }
 
-        // <add MY_LIST to ListView adapter start>
-
-        adapter = new ArrayAdapter<String>
-                (this, android.R.layout.simple_list_item_1, MY_LIST);
-
-
-        ListView listView = (ListView) findViewById(R.id.listView);
-
+        from = new String[]{"notesView"};
+        to = new int[]{R.id.notesView};
+        adapter = new SimpleAdapter(getBaseContext(), aList, R.layout.list_view_layout, from, to);
+        listView = (ListView) findViewById(R.id.listView);
         listView.setAdapter(adapter);
 
-        // < /add MY_LIST to ListView adapter over >
-
-
-
-        // < delete a particular item on ListView on LongClick start >
+       // delete a particular item on ListView on LongClick
 
         listView.setOnItemLongClickListener(new AdapterView.OnItemLongClickListener() {
 
@@ -83,31 +86,23 @@ public class MainActivity extends Activity {
                     if (MY_LIST.get(pos) == n.getMessage())
                     {
                         db2.deleteNote(n);
-                        MY_LIST.remove(pos);
+                        aList.remove(pos);
                         break;
                     }
-
                 }
 
                 adapter.notifyDataSetChanged();
-
                 return true;
             }
         });
 
-        // < /delete a particular item on ListView on LongClick over >
-
-
-
-        // < Checks if db has more than 0 rows and Checks if the app is opened for 1st time.>
-
-
+        // Checks if db has more than 0 rows and Checks if the app is opened for 1st time.
         // If opened for 1st time and has at-least one note/work added, displays a toast.
 
         if(no_of_db_rows>0){
-            final String PREFS_NAME = "MyPrefsFile";
+            PREFS_NAME = "MyPrefsFile";
 
-            SharedPreferences settings = getSharedPreferences(PREFS_NAME, 0);
+            settings = getSharedPreferences(PREFS_NAME, 0);
 
             if (settings.getBoolean("my_first_time", true)) {
                 //the app is being launched for first time, do something
@@ -116,13 +111,10 @@ public class MainActivity extends Activity {
                         Toast.LENGTH_LONG).show();
 
                 // first time task
-
                 // record the fact that the app has been started at least once
                 settings.edit().putBoolean("my_first_time", false).commit();
             }
         }
-
-        // < /Checks if db has more than 0 rows and Checks if the app is opened for 1st time.>
 
     }
 

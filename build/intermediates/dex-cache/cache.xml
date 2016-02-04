@@ -2,32 +2,46 @@
 <items version="2" >
 
     <item
-        jar="C:\Users\asu\AppData\Local\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\21.0.3\support-annotations-21.0.3.jar"
+        jar="D:\AndroidProjects\old\SimpleToDo\SimpleToDo\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.1.1\classes.jar"
         jumboMode="false"
-        revision="21.1.2"
-        sha1="4b74cefe1f0c1b819e7260c8627a14674e37fd35">
-        <dex dex="C:\android-practice\SimpleToDo\app\build\intermediates\pre-dexed\debug\support-annotations-21.0.3-ad25eaa2f95bc514dea84be355ff8400af271ef8.jar" />
+        revision="23.0.2"
+        sha1="6cbc7773921fcfedbe55657578f0cbfe614778dc">
+        <dex dex="D:\AndroidProjects\old\SimpleToDo\SimpleToDo\app\build\intermediates\pre-dexed\debug\classes-9f479ffef1ca9944f4db2b8acdd2a2013f39b0b2.jar" />
     </item>
     <item
-        jar="C:\android-practice\SimpleToDo\app\build\intermediates\exploded-aar\com.android.support\support-v4\21.0.3\libs\internal_impl-21.0.3.jar"
+        jar="D:\AndroidProjects\old\SimpleToDo\SimpleToDo\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\23.1.1\classes.jar"
         jumboMode="false"
-        revision="21.1.2"
-        sha1="01ec05bfbafcc07646ba813000bf2ef11742dd03">
-        <dex dex="C:\android-practice\SimpleToDo\app\build\intermediates\pre-dexed\debug\internal_impl-21.0.3-3afd9d0d0585b32051f68573a946aa89f534b262.jar" />
+        revision="23.0.2"
+        sha1="5c5699834e9722f1c288fea2de82725d078ba127">
+        <dex dex="D:\AndroidProjects\old\SimpleToDo\SimpleToDo\app\build\intermediates\pre-dexed\debug\classes-1c8b7af9c647fccd4529bff74468a6d59cf28d23.jar" />
     </item>
     <item
-        jar="C:\android-practice\SimpleToDo\app\build\intermediates\exploded-aar\com.android.support\support-v4\21.0.3\classes.jar"
+        jar="D:\AndroidProjects\old\SimpleToDo\SimpleToDo\app\build\intermediates\exploded-aar\com.android.support\design\23.1.1\classes.jar"
         jumboMode="false"
-        revision="21.1.2"
-        sha1="2c91c949a45a21cdecf26e03951e46c7beec9ad8">
-        <dex dex="C:\android-practice\SimpleToDo\app\build\intermediates\pre-dexed\debug\classes-1f6505ce2f5e0418c15f8389eb079ca3c1571b3b.jar" />
+        revision="23.0.2"
+        sha1="379471b2bd17d9737c050345c08e8c7d16589784">
+        <dex dex="D:\AndroidProjects\old\SimpleToDo\SimpleToDo\app\build\intermediates\pre-dexed\debug\classes-b3b939d7c365f88f9d0f5ffd331d04cb0751d780.jar" />
     </item>
     <item
-        jar="C:\android-practice\SimpleToDo\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\21.0.3\classes.jar"
+        jar="D:\AndroidProjects\old\SimpleToDo\SimpleToDo\app\build\intermediates\exploded-aar\com.android.support\recyclerview-v7\23.1.1\classes.jar"
         jumboMode="false"
-        revision="21.1.2"
-        sha1="81d42bf983a8741f4888a6e333e454e4a5e0eeb7">
-        <dex dex="C:\android-practice\SimpleToDo\app\build\intermediates\pre-dexed\debug\classes-cbee80286a0a37a62523effab505f9c095961260.jar" />
+        revision="23.0.2"
+        sha1="09c5e804bc67fc0580360043dff067df574a60d4">
+        <dex dex="D:\AndroidProjects\old\SimpleToDo\SimpleToDo\app\build\intermediates\pre-dexed\debug\classes-ee2874c7659c50bed9bb15bee14bf661346c05a3.jar" />
+    </item>
+    <item
+        jar="D:\AndroidProjects\old\SimpleToDo\SimpleToDo\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.1.1\libs\internal_impl-23.1.1.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="a4de9c81ae239414e1ed0f86441b02abaf29bca9">
+        <dex dex="D:\AndroidProjects\old\SimpleToDo\SimpleToDo\app\build\intermediates\pre-dexed\debug\internal_impl-23.1.1-705a224946aa1fc7099d030fde3b8ed3566c6c3b.jar" />
+    </item>
+    <item
+        jar="C:\Users\asu\AppData\Local\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\23.1.1\support-annotations-23.1.1.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="8d680ba5a623724d1fb0e81c36a790f023a6cede">
+        <dex dex="D:\AndroidProjects\old\SimpleToDo\SimpleToDo\app\build\intermediates\pre-dexed\debug\support-annotations-23.1.1-62a4b2043010bf75629b162a09c3440b5a651949.jar" />
     </item>
 
 </items>

@@ -3,38 +3,19 @@
     android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    android:paddingBottom="@dimen/activity_vertical_margin"
     tools:context=".MainActivity$PlaceholderFragment"
-    android:background="#F6DB84"
+    android:background="#f6f0da"
     >
 
 
     <Button
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/s1"
         android:id="@+id/button5"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true" />
 
-    <View
-        android:layout_width="wrap_content"
-        android:layout_height="1dp"
-        android:background="#000000"
-        android:layout_below="@+id/button5"
-        android:layout_marginTop="10dp"
-        android:id="@+id/hrr"
-        />
-
-    <View
-        android:layout_width="wrap_content"
-        android:layout_height="1dp"
-        android:background="#000000"
-        android:layout_below="@+id/hrr"
-        android:layout_marginTop="1dp"
-        android:layout_marginBottom="10dp"
-        android:id="@+id/hr2"
-        />
 
 
     <ListView
@@ -44,11 +25,10 @@
         android:layout_below="@+id/button5"
         android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true"
-        android:layout_marginTop="15dp"
-        android:textSize="10dip"
-        android:textColor="#585757"
-        android:divider="#000000"
-        android:dividerHeight="1px"
+        android:layout_marginTop="8dp"
+        android:textColor="#928c8c"
+        android:divider="#fff3e5"
+
 
         />
 

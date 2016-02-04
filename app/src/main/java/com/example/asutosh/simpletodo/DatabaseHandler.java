@@ -18,17 +18,16 @@ public class DatabaseHandler extends SQLiteOpenHelper {
     // Database Name
     private static final String DATABASE_NAME = "todoManager";
 
-    // Contacts table name
+    // table name
     private static final String TABLE_CONTACTS = "todo";
 
-    // Contacts Table Columns names
+    // Table Columns names
     private static final String KEY_ID = "id";
     private static final String KEY_MSG = "msg";
     private static final String KEY_DATE = "date";
 
     public DatabaseHandler(Context context) {
         super(context, DATABASE_NAME, null, DATABASE_VERSION);
-        //3rd argument to be passed is CursorFactory instance
     }
 
     // Creating Tables
@@ -50,11 +49,7 @@ public class DatabaseHandler extends SQLiteOpenHelper {
         onCreate(db);
     }
 
-    /**
-     * All CRUD(Create, Read, Update, Delete) Operations
-     */
 
-    // Adding new contact
     void addContact(Note note) {
         SQLiteDatabase db = this.getWritableDatabase();
 
@@ -64,11 +59,9 @@ public class DatabaseHandler extends SQLiteOpenHelper {
 
         // Inserting Row
         db.insert(TABLE_CONTACTS, null, values);
-        //2nd argument is String containing nullColumnHack
         db.close(); // Closing database connection
     }
 
-    // Getting single contact
     Note getNote(int id) {
         SQLiteDatabase db = this.getReadableDatabase();
 
@@ -80,11 +73,11 @@ public class DatabaseHandler extends SQLiteOpenHelper {
 
         Note note = new Note(Integer.parseInt(cursor.getString(0)),
                 cursor.getString(1), cursor.getString(2));
-        // return contact
+
         return note;
     }
 
-    // Getting All Contacts
+    // Getting All Notes
     public List<Note> getAllNotes() {
         List<Note> noteList = new ArrayList<Note>();
         // Select All Query
@@ -100,25 +93,21 @@ public class DatabaseHandler extends SQLiteOpenHelper {
                 note.setID(Integer.parseInt(cursor.getString(0)));
                 note.setMessage(cursor.getString(1));
                 note.setDate(cursor.getString(2));
-                // Adding contact to list
+                // Adding to list
                 noteList.add(note);
             } while (cursor.moveToPrevious());
         }
 
-        // return contact list
         return noteList;
     }
 
 
-
-    // Deleting single contact
+    // Deleting single note
     public void deleteNote(Note note) {
         SQLiteDatabase db = this.getWritableDatabase();
         db.delete(TABLE_CONTACTS, KEY_ID + " = ?",
                 new String[]{String.valueOf(note.getID())});
         db.close();
     }
-
-
 
 }

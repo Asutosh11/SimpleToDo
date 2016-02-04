@@ -12,7 +12,7 @@ This is a note taking android app. Users can add a note and long press an existi
 <b>Screenshots</b>
 
 1. <br>
-![Screenshot 2](https://github.com/Asutosh11/SimpleToDo/blob/master/Screenshots/2.jpeg "")
+![Screenshot 2](https://github.com/Asutosh11/SimpleToDo/blob/master/Screenshots/2.jpg "")
 
 2. <br> (Note - To delete a note, you can Long Press it) <br><br>
-![Screenshot 3](https://github.com/Asutosh11/SimpleToDo/blob/master/Screenshots/3.jpeg "")
+![Screenshot 3](https://github.com/Asutosh11/SimpleToDo/blob/master/Screenshots/3.jpg "")

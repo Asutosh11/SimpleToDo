@@ -9,16 +9,18 @@
 
 
     <Button
-        android:layout_width="match_parent"
+        android:layout_width="300dp"
         android:layout_height="wrap_content"
         android:text="@string/s1"
         android:id="@+id/button5"
+        android:textSize="15sp"
+        android:background="#dddddd"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true" />
 
 
 
-    <ListView
+    a<ListView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/listView"

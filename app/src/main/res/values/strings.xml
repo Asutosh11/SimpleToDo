@@ -3,8 +3,8 @@
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
     <string name="title_activity_add_to_do">ADD A NEW WORK OR NOTE</string>
-    <string name="s1">ADD A NEW WORK OR NOTE</string>
-    <string name="s2">ADD A NEW WORK OR NOTE</string>
+    <string name="s1">ADD A NEW NOTE</string>
+    <string name="s2">ADD A NEW NOTE</string>
     <string name="s3">DONE</string>
     <string name="s4">GO BACK</string>
 </resources>

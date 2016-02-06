@@ -9,7 +9,6 @@
  2. SQLite in Android
  <br><br>
  
- 
  <b>Screenshots</b>
   
 <br>(Note - To delete a note, you can Long Press it) <br><br> 

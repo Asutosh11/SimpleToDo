@@ -5,10 +5,12 @@ import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.MotionEvent;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.SimpleAdapter;
 import android.widget.Toast;
@@ -24,7 +26,7 @@ public class MainActivity extends Activity {
 
     private HashMap<String, String> hm;
     private List<HashMap<String, String>> aList;
-    private Button button5;
+    private ImageView button5;
     private DatabaseHandler db2;
     private SimpleAdapter adapter;
     private List<Note> note;
@@ -41,7 +43,7 @@ public class MainActivity extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        button5 = (Button)findViewById(R.id.button5);
+        button5 = (ImageView)findViewById(R.id.button5);
         addpage();
 
         /* db2 is instance of DatabaseHandler class that is the class for SQLite database operations
@@ -120,6 +122,8 @@ public class MainActivity extends Activity {
 
 
     public void addpage(){
+
+
         button5.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

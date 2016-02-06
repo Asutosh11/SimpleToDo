@@ -8,13 +8,12 @@
     >
 
 
-    <Button
-        android:layout_width="300dp"
-        android:layout_height="wrap_content"
-        android:text="@string/s1"
+    <ImageView
+        android:layout_width="60dp"
+        android:layout_height="60dp"
         android:id="@+id/button5"
         android:textSize="15sp"
-        android:background="#dddddd"
+        android:background="@drawable/pencil"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true" />
 

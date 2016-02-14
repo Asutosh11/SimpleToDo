@@ -12,5 +12,5 @@
 <b>Screenshots</b>
   
 <br>(Note - To delete a note, you can Long Press it) <br><br> 
- ![Screenshot 2](https://github.com/Asutosh11/SimpleToDo/blob/master/Screenshots/3.jpg "") &nbsp; &nbsp; &nbsp; ![Screenshot 3](https://github.com/Asutosh11/SimpleToDo/blob/master/Screenshots/2.jpg "")
+ ![Screenshot 2](https://github.com/Asutosh11/SimpleToDo/blob/master/Screenshots/3.jpg =282x500) &nbsp; &nbsp; &nbsp; ![Screenshot 3](https://github.com/Asutosh11/SimpleToDo/blob/master/Screenshots/2.jpg =282x500)
   
